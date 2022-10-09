@@ -38,7 +38,7 @@ body {
     font-size: 100%;
     color: var(--cor5);
     font-weight: bold;
-    background-color: #f8eef4;
+    background-color: #f8e9f3;
     color: #50555e;
 }
 
@@ -48,6 +48,10 @@ body {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 5vh;
+    background-color: #f5f5f7;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
 }
 
 .section {
@@ -65,6 +69,7 @@ body {
     padding: 0px 30px;
     font-family: var(--fontesubtitulo);
     letter-spacing: 0.1em;
+    margin: 10px;
 }
 .content-text-section1 {
     padding: 15px;
