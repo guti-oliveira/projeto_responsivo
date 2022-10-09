@@ -1,1 +1,85 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+        /* Cores */
+
+    --cor0: #EDD3D3;
+    --cor1: #D6B7B4;
+    --cor2: #D6B4BD;
+    --cor3: #F7E5EF;
+    --cor4: #FAD8D2;
+    --cor5: #40464A;
+
+        /* Fontes */
+
+    --fontepadrao: Helvetica, Arial, sans-serif;
+    --fontetitulo: 'Raleway', sans-serif;
+    --fontesubtitulo: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--fontepadrao);
+    font-size: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 93vh;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 800px;
+    padding: 0px;
+}
+
+.content-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.content-div img{
+    height: 200px;
+    padding: 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+.article {
+    background-color: var(--cor2);
+    text-align: justify;
+    padding: 60px;
+    border-radius: 100px 0px 0px 0px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    background-color: #40464A;
+}
+
+.footer img {
+    height: 60px;
+}
