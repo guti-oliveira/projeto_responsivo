@@ -198,15 +198,7 @@ body {
         flex-direction: column;
         
     }
-        /*Order das imagens e conteudo*/
 
-    .content-div-img-order {order: 0;}
-    .content-div-aside-order {order: 1;}
-    .content-div-text-order {order: 2;}
-
-}
-
-@media screen and (max-width: 1006px) {
     .title {
         font-size: 190%;
     }
@@ -214,6 +206,11 @@ body {
     .conteudo-paralelo-titulo {
         font-size: 170%;
     }
+        /*Order das imagens e conteudo*/
+
+    .content-div-img-order {order: 0;}
+    .content-div-aside-order {order: 1;}
+    .content-div-text-order {order: 2;}
 
 }
 
