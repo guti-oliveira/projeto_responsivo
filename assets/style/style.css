@@ -59,7 +59,7 @@ body {
     padding: 10px;
     margin: 10px;
     border-radius: 30px;
-    min-width: 300px;
+    min-width: 260px;
 }
 
 .content-div {
@@ -240,7 +240,7 @@ body {
     .conteudo-paralelo {
         margin: 0;
         padding: 10px;
-        text-align: left;
+        text-align: justify;
     }
 
     .conteudo-paralelo-titulo {
@@ -248,3 +248,40 @@ body {
     }
 
 }
+
+@media screen and (max-width: 320px) {
+
+    body {
+        font-size: 130%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 150%;
+    }
+
+    .article {
+        padding: 30px;
+    }
+
+    .conteudo-paralelo {
+        padding: 0;
+    }
+
+    .conteudo-paralelo-titulo {
+        font-size: 120%;
+    }
+
+    .footer img {
+        height: 40px;
+        transition: 0.3s;
+        
+    }
