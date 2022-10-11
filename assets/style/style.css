@@ -10,18 +10,18 @@
 :root {
         /* Cores */
 
-    --cor0: #EDD3D3;
-    --cor1: #D6B7B4;
-    --cor2: #D6B4BD;
-    --cor3: #F7E5EF;
-    --cor4: #FAD8D2;
-    --cor5: #40464A;
+    --cor0: #f5f5f7;
+    --cor1: #fad8d2;
+    --cor2: #cbaf8c;
+    --cor3: #77878f;
+    --cor4: #7b808a;
+    --cor5: #50555e;
+    --cor6: #40464A;
 
         /* Fontes */
 
-    --fontepadrao: Helvetica, Arial, sans-serif;
+    --fontepadrao: 'Roboto', sans-serif;
     --fontetitulo: 'Strong Girl','Raleway';
-    --fontesubtitulo: 'Roboto', sans-serif;
 }
 
 * {
@@ -29,17 +29,16 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
+html {
+    font-size: 62.5%;
 }
 
 body {
-    font-family: var(--fontepadrao);
-    font-size: 100%;
+    background-color: var(--cor0);
     color: var(--cor5);
+    font-family: var(--fontepadrao);
+    font-size: 1.6rem;
     font-weight: bold;
-    background-color: #f5f5f7;
-    color: #50555e;
 }
 
 .content {
@@ -50,7 +49,6 @@ body {
     margin-bottom: 5vh;
     padding: 10px;
     border-radius: 30px;
-    
 }
 
 .section {
@@ -61,16 +59,18 @@ body {
     padding: 10px;
     margin: 10px;
     border-radius: 30px;
+    min-width: 300px;
 }
 
 .content-div {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     padding: 0px 10px;
-    font-family: var(--fontesubtitulo);
     letter-spacing: 0.1em;
     margin: 10px;
+    
 }
 .content-text-section1 {
     padding: 10px;
@@ -83,7 +83,7 @@ body {
     width: 200px;
     padding: 10px;
     border-radius: 50%;
-    border: 2px solid var(--cor4);
+    border: 2px solid var(--cor1);
 }
 
 .content-div aside {
@@ -91,43 +91,39 @@ body {
 }
 
 .content-div aside p {
-    color: var(--cor5);
-    font-weight: lighter;
-    font-size: 12px;
+    color: var(--cor3);
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .content-div aside p a {
     text-decoration: underline;
-    color: var(--cor5);
+    color: var(--cor6);
     font-weight: bold;
     transition: 0.5s;
 }
 
 .content-div aside p a:hover {
     font-weight: bold;
-    color: #7b808a;
+    color: var(--cor4);
 }
 
 .title {
-    font-size: 40px;
+    font-size: 3.8rem;
     text-align: center;
     font-family: var(--fontetitulo);
     font-weight: bolder;
-    letter-spacing: 0.3em;
-    color: #50555e;
+    letter-spacing: 0.2em;
+    color: var(--cor5);
 }
 
 .article {
-    background-color: var(--cor1    );
+    background-image: linear-gradient(to left, rgba(158, 117, 62, 0.705), rgba(199, 158, 105, 0.637));
     text-align: justify;
     padding: 60px 20px;
     border-radius: 100px 0px 0px 0px;
-    font-family: var(--fontesubtitulo);
     font-weight: 500;
-    color: #f5f5f7;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
-    border: #00000021 1px solid;
 }
 
 .conteudo-paralelo {
@@ -138,22 +134,22 @@ body {
     text-align: justify;
     padding: 40px;
     gap: 30px;
-    font-family: var(--fontesubtitulo);
     letter-spacing: 0.1em;
     font-weight: 500;
+    min-width: 280px;
 }
 
 .conteudo-paralelo-titulo {
-    font-family: 'Raleway';
-    font-size: 32px;
+    font-size: 3.2rem;
     padding: 70px; 
-    border-top: 1px solid #af929a;
+    border-top: 1px solid var(--cor2);
+    text-align: center;
 }
 
 .conteudo-paralelo aside p {
-    color: var(--cor5);
+    color: var(--cor3);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .conteudo-paralelo aside p a {
@@ -164,7 +160,7 @@ body {
 
 .conteudo-paralelo aside p a:hover {
     font-weight: bold;
-    color: #7b808a;
+    color: var(--cor4);
 }
 
 .aside-image {
@@ -178,9 +174,77 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #40464A;
+    background-color: var(--cor6);
 }
 
 .footer img {
     height: 60px;
+    transition: 0.3s;
+    
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 140%;
+    }
+
+    .content-div {
+        display: flex;
+        flex-direction: column;
+        
+    }
+        /*Order das imagens e conteudo*/
+
+    .content-div-img-order {order: 0;}
+    .content-div-aside-order {order: 1;}
+    .content-div-text-order {order: 2;}
+
+}
+
+@media screen and (max-width: 1006px) {
+    .title {
+        font-size: 190%;
+    }
+
+    .conteudo-paralelo-titulo {
+        font-size: 170%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 150%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-1 {
+        order: 1;
+    }
+
+    .section-2 {
+        order: 0;
+    }
+
+    .conteudo-paralelo {
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .conteudo-paralelo-titulo {
+        font-size: 140%;
+    }
+
 }
