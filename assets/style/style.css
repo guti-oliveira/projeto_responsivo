@@ -227,11 +227,19 @@ body {
 
     .section {
         width: auto;
+        margin: 20px 2px 20px 0px;
+        padding: 0px;
     }
 
     .content {
         display: flex;
         flex-direction: column;
+    }
+
+    .content-div {
+        width: auto;
+        margin: 2px;
+        padding: 0px;
     }
 
     .section-1 {
