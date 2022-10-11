@@ -240,7 +240,6 @@ body {
     .conteudo-paralelo {
         margin: 0;
         padding: 10px;
-        text-align: justify;
     }
 
     .conteudo-paralelo-titulo {
@@ -283,5 +282,4 @@ body {
     .footer img {
         height: 40px;
         transition: 0.3s;
-        
     }
