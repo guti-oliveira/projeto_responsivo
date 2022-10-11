@@ -78,7 +78,7 @@ body {
     text-align: justify;
 }
 
-.content-div img{
+.content-div img {
     object-fit: cover;
     height: 200px;
     width: 200px;
